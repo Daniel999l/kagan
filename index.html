@@ -2018,6 +2018,15 @@
         <script async src="https://events.framer.com/script" data-fid="2699eb73fd0c06fdb95deb7f5ba96a9a169ab2edbb0e303c43bb281717551991"></script>
         <!-- End of bodyStart -->
         <div id="main"></div>
+            <script>
+      window.onload = function() {
+        var urlParams = new URLSearchParams(window.location.search);
+        var redirectPath = urlParams.get('redirect');
+        if (redirectPath) {
+          history.replaceState(null, '', redirectPath);
+        }
+      };
+    </script>
         <script data-framer-appear-animation="no-preference"></script>
         <script type="module" async data-framer-bundle fetchpriority="low" src="https://framerusercontent.com/sites/1IUh3zN09rma1tXir3nNig/default_script0.KKOFPVGZ.mjs"></script>
         <!-- End of bodyEnd -->
