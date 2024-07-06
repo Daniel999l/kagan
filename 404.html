@@ -4,9 +4,10 @@
     <meta charset="utf-8">
     <title>Page Not Found</title>
     <script type="text/javascript">
-      // Script to redirect to index.html
-      var pathname = window.location.pathname;
-      window.location.replace('/index.html?redirect=' + pathname);
+      // Redirect to the index.html page, preserving the path
+      var path = window.location.pathname;
+      var newUrl = window.location.origin + '/index.html?redirect=' + path;
+      window.location.replace(newUrl);
     </script>
   </head>
   <body>
